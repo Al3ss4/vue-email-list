@@ -14,8 +14,9 @@
 
 <body>
 
-    <div id="app"  class="container">
-        <ul>
+    <div id="app" class="container">
+        <!-- creo un v-if per il bonus: fino a quando la lunghezza dell'array non è 10 non stamperà nulla nell'html-->
+        <ul v-if="email.length==10">
             <li v-for="mail in email">{{mail}}</li>
         </ul>
 
